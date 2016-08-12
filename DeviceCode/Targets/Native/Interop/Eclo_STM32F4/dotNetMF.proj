@@ -1,0 +1,21 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Directory>DeviceCode\Targets\Native\Interop\Eclo_STM32F4</Directory>
+    <AssemblyName>Eclo_STM32F4</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+<ItemGroup>
+<HFile Include="Eclo_STM32F4.h" />
+<Compile Include="Eclo_STM32F4.cpp" />
+<Compile Include="Eclo_STM32F4_Eclo_STM32F4_Math_mshl.cpp" />
+<HFile Include="Eclo_STM32F4_Eclo_STM32F4_Math.h" />
+<Compile Include="Eclo_STM32F4_Eclo_STM32F4_Math.cpp" />
+<Compile Include="Eclo_STM32F4_Eclo_STM32F4_Utilities_mshl.cpp" />
+<HFile Include="Eclo_STM32F4_Eclo_STM32F4_Utilities.h" />
+<Compile Include="Eclo_STM32F4_Eclo_STM32F4_Utilities.cpp" />
+</ItemGroup>
+<Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

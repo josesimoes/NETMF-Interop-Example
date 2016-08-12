@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FeatureName>Eclo.STM32F4</FeatureName>
+    <Guid>{9b94bf23-8aa3-4e80-bb5a-4d2b12f007c5}</Guid>
+    <Description>&lt;Add Feature Description Here&gt;</Description>
+    <Groups />
+    <ECLO_STM32F4_FEATUREPROJ>True</ECLO_STM32F4_FEATUREPROJ>
+  </PropertyGroup>
+  <ItemGroup>
+    <DriverLibs Include="Eclo_STM32F4.$(LIB_EXT)" />
+    <InteropFeature Include="Eclo_STM32F4" />
+    <MMP_DAT_CreateDatabase Include="E:\GitHub\NETMF-Interop-Example\Eclo.STM32F4\Eclo.STM32F4\bin\Debug\$(ENDIANNESS)\Eclo.STM32F4.pe" />
+    <RequiredProjects Include="$(SPOCLIENT)\DeviceCode\Targets\Native\Interop\Eclo_STM32F4\dotnetmf.proj" />
+  </ItemGroup>
+</Project>
